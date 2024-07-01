@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARMEVO - Tecnologia Agrícola</title>
+    <style>
+        body {
+            font-family: 'Georama', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #32313C; /* Cor RGB(50, 49, 60) */
+        }
+        header {
+            background-color: #27912B; /* Cor RGB(39, 145, 43) */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header img {
+            max-width: 100px;
+            height: auto;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #32313C; /* Cor RGB(50, 49, 60) */
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #F2801F; /* Cor RGB(242, 128, 31) */
+            color: white;
+        }
+        .container {
+            padding: 20px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .content div {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        footer {
+            background-color: #27912B; /* Cor RGB(39, 145, 43) */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 600px) {
+            .content div {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="FARMEVO Logo">
+        <h1>Bem-vindo à FARMEVO</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Serviços</a>
+        <a href="#about">Sobre Nós</a>
+        <a href="#contact">Contato</a>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <div>
+                <h2>Nosso Propósito</h2>
+                <p>A FARMEVO é uma empresa de tecnologia agrícola dedicada a revolucionar a gestão de operações agrícolas com soluções inovadoras e eficientes.</p>
+            </div>
+            <div>
+                <h2>Serviços</h2>
+                <p>Oferecemos um sistema de gestão agrícola completo para monitorar e otimizar as operações de uma safra, garantindo uma produção mais eficiente e sustentável.</p>
+            </div>
+            <div>
+                <h2>Contato</h2>
+                <p>Entre em contato conosco para saber mais sobre nossos serviços e como podemos ajudar a melhorar a gestão da sua produção agrícola.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 FARMEVO. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
