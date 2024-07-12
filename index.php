@@ -26,7 +26,7 @@ if(isset($_POST['nome'])){
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -36,7 +36,7 @@ if(isset($_POST['nome'])){
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         
-        <link href="css/first_load.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -621,7 +621,7 @@ if(isset($_POST['nome'])){
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <!-- <link href="css/styles.css" rel="stylesheet" /> -->
 
     </body>
 </html>
