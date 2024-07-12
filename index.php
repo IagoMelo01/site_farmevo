@@ -54,11 +54,11 @@ if(isset($_POST['nome'])){
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
                         <li class="nav-item"><a class="nav-link" href="#services">Gestão</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Funcionalidades</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
                         <!-- <li class="nav-item"><a class="nav-link" href="#team">Team</a></li> -->
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,6 +69,69 @@ if(isset($_POST['nome'])){
                 <!-- <a class="btn btn-primary btn-xl text-uppercase" href="#services">Saiba Mais!</a> -->
             </div>
         </header>
+        <section class="page-section" id="contact">
+            <div class="container bg-grey">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Entre em contato!</h2>
+                    <h3 class="section-subheading text-oferta">Entre na lista pré lançamento e garanta uma oferta única!</h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" method="post">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" name="nome" id="name" type="text" placeholder="Seu Nome *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">O nome é obrigatório</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" name="email" type="email" placeholder="Seu Email *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">O email é obrigatório</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email inválido</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" name="telefone" type="tel" placeholder="Seu telefone *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" name="mensagem" id="message" placeholder="Conte um pouco sobre sua operação *"></textarea>
+                                <!-- <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Enviado com sucesso!</div>
+                            Você foi adicionado na lista de interessados pré lançamento, em breve entraremos em contato com novidades! 
+                            <br />
+                            <!-- <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a> -->
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Erro ao enviar!</div></div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase " id="submitButton" type="submit">Enviar</button></div>
+                </form>
+            </div>
+        </section>
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
@@ -336,69 +399,7 @@ if(isset($_POST['nome'])){
             </div>
         </div> -->
         <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Entre em contato!</h2>
-                    <h3 class="section-subheading text-oferta">Entre na lista pré lançamento e garanta uma oferta única</h3>
-                </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" method="post">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" name="nome" id="name" type="text" placeholder="Seu Nome *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">O nome é obrigatório</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" name="email" type="email" placeholder="Seu Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">O email é obrigatório</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email inválido</div>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" name="telefone" type="tel" placeholder="Seu telefone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" name="mensagem" id="message" placeholder="Conte um pouco sobre sua operação *"></textarea>
-                                <!-- <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Enviado com sucesso!</div>
-                            Você foi adicionado na lista de interessados pré lançamento, em breve entraremos em contato com novidades! 
-                            <br />
-                            <!-- <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a> -->
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Erro ao enviar!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase " id="submitButton" type="submit">Enviar</button></div>
-                </form>
-            </div>
-        </section>
+        
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
